@@ -1,0 +1,24 @@
+<div class="header">
+  <h2>Home</h2>
+</div>
+<div class="text-right">
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Profile</button>
+    <button mat-menu-item (click)="logout()">Logout</button>
+  </mat-menu>
+</div>
+      <mat-tab-group mat-align-tabs="start">
+        <mat-tab label="Home">
+          <app-imagegallery></app-imagegallery>
+        </mat-tab>
+        <mat-tab label="About">
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum leo. Donec dictum orci sed blandit ultrices. Proin vehicula tortor eget ligula sollicitudin sagittis. Aenean sit amet erat a arcu vulputate scelerisque. Proin maximus purus orci, nec laoreet justo elementum et. Aliquam erat volutpat. Vivamus ac tortor nisi. Aenean luctus sagittis enim at dictum. Nulla facilisi. Morbi lobortis sollicitudin tellus, nec ornare ipsum tristique ac. Maecenas ac magna odio. Donec faucibus mi ut felis ultrices, id tristique eros volutpat. Donec a lectus nisl. Fusce metus arcu, aliquam non mi id, iaculis vulputate quam. Proin vitae libero nisl.
+          </p>
+          
+        </mat-tab>
+      </mat-tab-group>
+  

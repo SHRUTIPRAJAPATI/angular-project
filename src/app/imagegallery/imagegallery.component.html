@@ -1,0 +1,21 @@
+<div class="header">
+  <h2>Welcome back shruti</h2>
+</div>
+<div class="paragraph">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum leo. Donec dictum orci sed blandit ultrices. Proin vehicula tortor eget ligula sollicitudin sagittis. Aenean sit amet erat a arcu vulputate scelerisque. Proin maximus purus orci, nec laoreet justo elementum et. Aliquam erat volutpat. Vivamus ac tortor nisi.</p>
+</div>
+
+  <div class="row">
+    <ul>
+      <li *ngFor="let images of imagesData">
+        <img src='{{images.url}}' alt="no-image" class="tn" width="200" height="160">
+      </li>
+      <button style="text-align: center;" *ngIf="!imagesData1" mat-flat-button color="primary" (click)="loadMore()">Show More</button>
+      <div *ngIf="imagesData1">
+        <li *ngFor="let images of imagesData1">
+          <img src='{{images.url}}' alt="no-image" class="tn" width="200" height="160">
+        </li>
+      </div>
+    </ul>
+
+  </div>
